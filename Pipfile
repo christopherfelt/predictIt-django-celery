@@ -9,6 +9,7 @@ verify_ssl = true
 django = "*"
 celery = "*"
 redis = "*"
+psycopg2-binary = "==2.8.4"
 
 [requires]
 python_version = "3.7"
