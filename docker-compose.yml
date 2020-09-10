@@ -24,7 +24,7 @@ services:
         image: redis:alpine
     celery:
         build: .
-        command: celery -A core worker -l info
+        command: celery -A project worker -l info
         volumes:
             - .:/code
         environment:
@@ -35,7 +35,7 @@ services:
             - redis
     celery-beat:
         build: .
-        command: celery -A core beat -l info
+        command: celery -A project beat -l info
         volumes:
             - .:/code
         environment:
