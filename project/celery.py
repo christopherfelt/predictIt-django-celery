@@ -9,4 +9,3 @@ app = Celery("project")
 app.config_from_object("django.conf:settings", namespace="CELERY")
 app.autodiscover_tasks()
 
-# celery return module not found
